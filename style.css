@@ -1,0 +1,98 @@
+/* ---------------reset the default browser-----------------------  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+body{
+    -webkit-font-smoothing:antialiased;
+}
+/*---------------- fonts-----------  */
+@font-face{
+    font-family: 'Raleway-regular';
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: 'Raleway-medium';
+    src: url(./fonts/Raleway-Medium.ttf);
+}
+@font-face{
+    font-family: 'Raleway-bold';
+    src: url(./fonts/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: 'Raleway-black';
+    src: url(./fonts/Raleway-Black.ttf);
+}
+@font-face{
+    font-family: 'Raleway-semibold';
+    src: url(./fonts/Raleway-SemiBold.ttf);
+}
+
+
+/*----------------------- color-variable -------------- */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+/*----------------------------------------- media Queries----------------------  */
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+header.topbar{
+    background-color:var(--secondary) ;
+    color:var(--pure) ;
+    font-family: 'Raleway-SemiBold';
+    padding: 0.6rem 0.2rem;
+}
+header.topbar .author a{
+    color: var(--pure);
+    text-decoration: none;
+    
+}
+header.topbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.topbar .container .author{
+    display: flex;
+    justify-content:center;
+}
+header.topbar .icon a{
+    margin-right: .9rem;
+}
+header.topbar .author .divider{
+    padding: 0 10px;
+}
+header.topbar .author  img{
+    margin: 0 .6rem;
+}
