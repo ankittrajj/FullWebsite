@@ -67,6 +67,7 @@ body{
         max-width: 1152px;
     }
 }
+
 header.topbar{
     background-color:var(--secondary) ;
     color:var(--pure) ;
@@ -78,15 +79,20 @@ header.topbar .author a{
     text-decoration: none;
     
 }
-header.topbar .container{
+/* -------------------------------------Flex utility class------------------------------  */
+.flex{
     display: flex;
+}
+.justify-content{
     justify-content: space-between;
+}
+.align-items{
     align-items: center;
 }
-header.topbar .container .author{
-    display: flex;
-    justify-content:center;
+.justify-centre{
+    justify-content: center;
 }
+
 header.topbar .icon a{
     margin-right: .9rem;
 }
@@ -95,4 +101,81 @@ header.topbar .author .divider{
 }
 header.topbar .author  img{
     margin: 0 .6rem;
+}
+
+/*------------------------------- nav --------------------------------- */
+nav .top{
+    padding: .5rem 0;
+}
+
+nav .top .contact h4,
+nav .top .time h4 {
+    font-family:"Raleway-black";
+    margin-bottom: 4px;
+}
+nav .top .contact h5,
+nav .top .time h5{
+    font-family: "Raleway-medium";
+    letter-spacing: 2px;
+    color: var(--ternary);
+}
+nav .top .contact img,
+nav .top .time img{
+    margin-right: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+/* -------------------------------------navbar-------------------------------------- */
+.navbar .container-navbar{
+    margin:0 20rem;
+    margin-top: 2rem;
+}
+nav .navbar  a{
+    padding: 0.65rem;
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: "Raleway-SemiBold";
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+nav .navbar  a.active{
+    background: var(--primary);
+    color: var(--pure);
+}
+nav .navbar  a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+/*---------------------------------------- shadow utility class ---------------------------------- */
+.shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.shadow::after{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-image: url(./icons/shadow.svg);
+    background-repeat: no-repeat;
+    position:absolute;
+    bottom: -20px;
+    background-position: center;
+    z-index: -1;
+}
+header.hero-section{
+    background-image: url('./images/hero.png');
+    height: 450px;
+    background-size: cover;
+    padding: 7.7rem 12rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+header.hero-section .welcome-container span{
+    font-family: "Raleway-Bold";
+    color: var(--secondary);
+}
+header.hero-section .welcome-container img{
+    /* margin:0 2rem; */
+    padding: 0  .8rem;
 }
