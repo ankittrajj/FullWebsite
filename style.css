@@ -178,6 +178,9 @@ header.hero-section{
     overflow: hidden;
     background-repeat: no-repeat;
 }
+header.hero .hero-container{
+    position: relative;
+}
 header.hero-section .welcome-container span{
     font-family: "Raleway-Bold";
     color: var(--secondary);
@@ -240,6 +243,6 @@ header.hero-section .hero-img img{
     position:absolute;
     margin-left: 40rem;
     /* margin-top: 1px; */
-    top: 300px;
+    top: 22rem;
     /* right: 40px; */
 }
